@@ -19,6 +19,7 @@ class HashTable
     bool Find(const std::string &arg, int *outIndex = nullptr){
         int index = GetIndex(arg);
 
+
         while (true)
         {
             if(m_Entries[index].Data == arg){
